@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="个人技术博客 —— 记录学习与成长路上的技术笔记">
+  <title>鲨鱼的博客 · 技术随笔</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 顶部导航 -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo" data-nav="home">鲨鱼<span class="logo-dot">.</span></a>
+      <nav class="site-nav">
+        <a href="#" class="nav-link is-active" data-nav="home">首页</a>
+        <a href="#" class="nav-link" data-nav="posts">文章</a>
+        <a href="#" class="nav-link" data-nav="about">关于</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 主内容区：各视图通过 JS 切换 -->
+  <main class="site-main container">
+
+    <!-- 首页视图 -->
+    <section id="view-home" class="view">
+      <div class="hero">
+        <div class="hero-avatar" aria-hidden="true">鲨</div>
+        <h1 class="hero-title">你好，我是鲨鱼 👋</h1>
+        <p class="hero-tagline">一个在路上的开发者，记录前端、工具与效率相关的技术笔记。</p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary" data-nav="posts">阅读文章</a>
+          <a href="#" class="btn btn-ghost" data-nav="about">关于我</a>
+        </div>
+      </div>
+
+      <h2 class="section-title">精选文章</h2>
+      <div id="featured-posts" class="post-grid"></div>
+    </section>
+
+    <!-- 文章列表视图 -->
+    <section id="view-posts" class="view is-hidden">
+      <h1 class="page-title">全部文章</h1>
+      <p class="page-subtitle">共 <span id="post-count">0</span> 篇，持续更新中。</p>
+      <div id="post-list" class="post-list"></div>
+    </section>
+
+    <!-- 文章详情视图 -->
+    <section id="view-post" class="view is-hidden">
+      <a href="#" class="back-link" data-nav="posts">← 返回文章列表</a>
+      <article id="post-detail" class="post-detail"></article>
+    </section>
+
+    <!-- 关于视图 -->
+    <section id="view-about" class="view is-hidden">
+      <h1 class="page-title">关于我</h1>
+      <div class="about-card">
+        <p>
+          我是鲨鱼，一名正在成长中的开发者。这里是我记录技术学习、踩坑经验与思考的地方。
+          写作不是为了证明什么，而是为了让知识真正沉淀下来。
+        </p>
+        <h3>技能</h3>
+        <ul class="skill-tags">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+          <li>Figma</li>
+        </ul>
+        <h3>联系方式</h3>
+        <ul class="contact-list">
+          <li>邮箱：<a href="mailto:hello@example.com">hello@example.com</a></li>
+          <li>GitHub：<a href="https://github.com" target="_blank" rel="noopener">github.com/yourname</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> 鲨鱼 · 用简单的 HTML5 + CSS3 + JS 手写而成</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
